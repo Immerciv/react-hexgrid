@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 
+import Svg, { G, Path } from 'react-native-svg'
+
 type Props = {} & React.SVGProps<SVGSVGElement>
 
 /**
@@ -19,7 +21,7 @@ export function HexGrid({
   ...props
 }: Props) {
   return (
-    <svg
+    <Svg
       className="grid"
       width={width}
       height={height}
